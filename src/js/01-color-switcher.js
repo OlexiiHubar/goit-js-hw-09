@@ -5,7 +5,7 @@ refs = {
 };
 
 refs.startBtn.addEventListener('click', onStart);
-refs.stopBtn.addEventListener('click', onStop);
+refs.stopBtn.addEventListener('clic', onStop);
 refs.stopBtn.disabled = true;
 
 function onStart() {
