@@ -4,7 +4,7 @@ const refs = {
   body: document.querySelector('body'),
 };
 
-const intervalId = 0;
+let intervalId = 0;
 
 refs.startBtn.addEventListener('click', onStart);
 refs.stopBtn.addEventListener('click', onStop);
