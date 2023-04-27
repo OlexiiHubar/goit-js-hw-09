@@ -4,6 +4,8 @@ const refs = {
   body: document.querySelector('body'),
 };
 
+const intervalId = 0;
+
 refs.startBtn.addEventListener('click', onStart);
 refs.stopBtn.addEventListener('click', onStop);
 refs.stopBtn.disabled = true;
@@ -11,7 +13,7 @@ refs.stopBtn.disabled = true;
 function onStart() {
   refs.startBtn.disabled = true;
   refs.stopBtn.disabled = false;
-  return (intervalId = setInterval(changeBcgColor, 1000));
+  intervalId = setInterval(changeBcgColor, 1000);
 }
 
 function onStop() {
