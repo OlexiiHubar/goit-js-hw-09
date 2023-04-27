@@ -8,6 +8,7 @@ let delayValue = 0;
 let stepValue = 0;
 let amountValue = 0;
 let promiseQuantity = 0;
+let totalDelay = 0;
 
 refs.form.addEventListener('submit', onFormSubmit);
 
