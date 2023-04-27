@@ -11,7 +11,7 @@ refs.stopBtn.disabled = true;
 function onStart() {
   refs.startBtn.disabled = true;
   refs.stopBtn.disabled = false;
-  setIntevalOnchangeBcgColor();
+  return (intervalId = setInterval(changeBcgColor, 1000));
 }
 
 function onStop() {
@@ -28,8 +28,4 @@ function getRandomHexColor() {
 
 function changeBcgColor() {
   refs.body.style.backgroundColor = getRandomHexColor();
-}
-
-function setIntevalOnchangeBcgColor() {
-  return (intervalId = setInterval(changeBcgColor, 1000));
 }
